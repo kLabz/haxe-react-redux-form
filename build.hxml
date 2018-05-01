@@ -1,0 +1,12 @@
+-cp src
+
+-lib react
+-lib redux
+
+-js .build/lib.js
+react.redux.form.Control
+# react.redux.form.Errors
+# react.redux.form.LocalForm
+# react.redux.form.Field
+# react.redux.form.Fieldset
+
