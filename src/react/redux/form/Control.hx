@@ -74,6 +74,8 @@ typedef ControlProps = {
 	`onBlur`, `onFocus`, `onKeyPress`, etc. will be passed directly to the
 	control, so feel free to use them.
 
+	See https://davidkpiano.github.io/react-redux-form/docs/api/Control.html
+
 	[1]: https://davidkpiano.github.io/react-redux-form/docs/guides/custom-controls.html
 **/
 @:jsRequire('react-redux-form', 'Control')

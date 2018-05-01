@@ -6,16 +6,17 @@ React Redux Form is a collection of reducer creators and action creators that ma
 
 ## HRRF 0.1.0: Focus on local forms
 
-The first release of this library will only focus on local forms, and will leave out the `Form` element and the following APIs: `modelReducer`, `formReducer`, `combineForms`, `createForms` and action creators.
+The first release of this library will only focus on local forms, and will leave out the following APIs: `modelReducer`, `formReducer`, `combineForms`, `createForms` and action creators.
 
 The plan it to make it work seamlessly with `haxe-redux`, which may not be the case out of the box.
 
 ### 0.1.0 roadmap
 
  * [X] `Control.x` components
- * [ ] `LocalForm` component
- * [ ] `Errors` component
- * [ ] `Fieldset` component
- * [ ] `Field` component
+ * [X] `Form` component
+ * [X] `LocalForm` component
+ * [X] `Errors` component
+ * [X] `Fieldset` component
+ * [X] `Field` component
  * [ ] Example app for local forms
 
