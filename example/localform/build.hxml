@@ -1,0 +1,10 @@
+-cp src
+-cp ../../src
+
+-lib react
+-lib redux
+
+-js .build/app.js
+-main Main
+-debug
+
