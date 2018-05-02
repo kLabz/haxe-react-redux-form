@@ -1,11 +1,12 @@
 {
   "name": "react-redux-form",
   "description": "React Redux Form externs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "releasenote": "Initial release: focus on local forms. (See CHANGELOG.md)",
   "url": "https://github.com/kLabz/haxe-react-redux-form",
   "license": "MIT",
   "tags": [
+    "javascript",
     "react",
     "redux",
     "form"
