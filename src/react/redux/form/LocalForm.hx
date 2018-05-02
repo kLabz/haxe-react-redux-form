@@ -2,6 +2,12 @@ package react.redux.form;
 
 import react.ReactComponent;
 import react.redux.form.Form.FormProps;
+import redux.Redux.Dispatch;
+
+typedef LocalFormProps = {
+	> FormProps,
+	@:optional var getDispatch:Dispatch->Void;
+}
 
 /**
 	The `<LocalForm>` component takes all the props from the `<Form>`
@@ -16,6 +22,12 @@ import react.redux.form.Form.FormProps;
 	  whenever the form's model value is changed
 	* `initialState={...}` (Any): the initial state of the model (default: `{}`)
 
+	It also accepts props exclusive to `<LocalForm>`:
+
+	* `getDispatch={(dispatch) => ...}` (Function): provides the Local Form
+	  store's `dispatch` to the callback once - when the component is initially
+	  mounted.
+
 	Notes:
 	* `redux` and `react-redux` are still required as peer dependencies. This
 	  just allows you to not have to set up the boilerplate; e.g., the store
@@ -27,5 +39,5 @@ import react.redux.form.Form.FormProps;
 	See https://davidkpiano.github.io/react-redux-form/docs/guides/local.html
 **/
 @:jsRequire('react-redux-form', 'LocalForm')
-extern class LocalForm extends ReactComponentOfProps<FormProps> {}
+extern class LocalForm extends ReactComponentOfProps<LocalFormProps> {}
 
