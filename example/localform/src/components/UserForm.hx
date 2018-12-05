@@ -58,7 +58,7 @@ class UserForm extends ReactComponent {
 		');
 	}
 
-	function handleSubmit(user) {
+	function handleSubmit(user, _) {
 		trace('submit', user);
 	}
 }
