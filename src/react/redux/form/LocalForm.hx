@@ -6,6 +6,7 @@ import redux.Redux.Dispatch;
 
 typedef LocalFormProps = {
 	> FormProps,
+	@:optional var initialState:Dynamic;
 	@:optional var getDispatch:Dispatch->Void;
 }
 
