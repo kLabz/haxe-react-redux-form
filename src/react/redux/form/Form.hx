@@ -34,6 +34,7 @@ typedef FormProps = {
 
 	See https://davidkpiano.github.io/react-redux-form/docs/api/Form.html
 **/
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Form')
 extern class Form extends ReactComponentOfProps<FormProps> {}
 
