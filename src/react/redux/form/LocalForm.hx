@@ -39,6 +39,7 @@ typedef LocalFormProps = {
 
 	See https://davidkpiano.github.io/react-redux-form/docs/guides/local.html
 **/
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'LocalForm')
 extern class LocalForm extends ReactComponentOfProps<LocalFormProps> {}
 
