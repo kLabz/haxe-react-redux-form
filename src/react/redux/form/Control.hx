@@ -78,8 +78,9 @@ typedef ControlProps = {
 
 	[1]: https://davidkpiano.github.io/react-redux-form/docs/guides/custom-controls.html
 **/
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control')
-extern class Control<TProps:ControlProps> extends ReactComponentOfProps<TProps> {
+extern class Control extends ReactComponentOfProps<ControlProps> {
 	static var input:ReactComponentOfProps<ControlProps>;
 	static var custom:ReactComponentOfProps<ControlProps>;
 	static var text:ReactComponentOfProps<ControlProps>;
@@ -92,33 +93,42 @@ extern class Control<TProps:ControlProps> extends ReactComponentOfProps<TProps> 
 	static var reset:ReactComponentOfProps<ControlProps>;
 }
 
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control.input')
-extern class ControlInput<TProps:ControlProps> extends ReactComponentOfProps<TProps> {}
+extern class ControlInput extends ReactComponentOfProps<ControlProps> {}
 
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control.custom')
-extern class ControlCustom<TProps:ControlProps> extends ReactComponentOfProps<TProps> {}
+extern class ControlCustom extends ReactComponentOfProps<ControlProps> {}
 
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control.text')
-extern class ControlText<TProps:ControlProps> extends ReactComponentOfProps<TProps> {}
+extern class ControlText extends ReactComponentOfProps<ControlProps> {}
 
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control.textarea')
-extern class ControlTextarea<TProps:ControlProps> extends ReactComponentOfProps<TProps> {}
+extern class ControlTextarea extends ReactComponentOfProps<ControlProps> {}
 
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control.radio')
-extern class ControlRadio<TProps:ControlProps> extends ReactComponentOfProps<TProps> {}
+extern class ControlRadio extends ReactComponentOfProps<ControlProps> {}
 
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control.checkbox')
-extern class ControlCheckbox<TProps:ControlProps> extends ReactComponentOfProps<TProps> {}
+extern class ControlCheckbox extends ReactComponentOfProps<ControlProps> {}
 
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control.file')
-extern class ControlFile<TProps:ControlProps> extends ReactComponentOfProps<TProps> {}
+extern class ControlFile extends ReactComponentOfProps<ControlProps> {}
 
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control.select')
-extern class ControlSelect<TProps:ControlProps> extends ReactComponentOfProps<TProps> {}
+extern class ControlSelect extends ReactComponentOfProps<ControlProps> {}
 
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control.button')
-extern class ControlButton<TProps:ControlProps> extends ReactComponentOfProps<TProps> {}
+extern class ControlButton extends ReactComponentOfProps<ControlProps> {}
 
+@:acceptsMoreProps
 @:jsRequire('react-redux-form', 'Control.reset')
-extern class ControlReset<TProps:ControlProps> extends ReactComponentOfProps<TProps> {}
-
+extern class ControlReset extends ReactComponentOfProps<ControlProps> {}
