@@ -3,7 +3,7 @@ package react.redux.form;
 import js.html.HtmlElement;
 import haxe.Constraints.Function;
 import haxe.extern.EitherType;
-import react.React.CreateElementType;
+import react.ReactType;
 import react.ReactComponent;
 
 @:enum abstract ValidationEvent(String) to String {
@@ -26,7 +26,7 @@ typedef ControlProps = {
 	@:optional var parser:Any->Any;
 	@:optional var changeAction:Function;
 	@:optional var controlProps:{};
-	@:optional var component:CreateElementType;
+	@:optional var component:ReactType;
 	@:optional var ignore:EitherType<String, Array<String>>;
 	@:optional var disabled:Any;
 	@:optional var getRef:HtmlElement->Void;

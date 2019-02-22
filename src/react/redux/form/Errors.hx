@@ -2,15 +2,15 @@ package react.redux.form;
 
 import haxe.Constraints.Function;
 import haxe.extern.EitherType;
-import react.React.CreateElementType;
+import react.ReactType;
 import react.ReactComponent;
 
 typedef ErrorsProps = {
 	var model:EitherType<String, Function>;
 	@:optional var messages:Dynamic;
 	@:optional var show:Any;
-	@:optional var wrapper:CreateElementType;
-	@:optional var component:CreateElementType;
+	@:optional var wrapper:ReactType;
+	@:optional var component:ReactType;
 }
 
 /**

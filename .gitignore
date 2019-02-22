@@ -1,3 +1,4 @@
+autogit.bat
 node_modules/
 .build/
 .haxelib/
