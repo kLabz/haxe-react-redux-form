@@ -3,7 +3,7 @@
   "description": "React Redux Form externs",
   "version": "0.1.3",
   "releasenote": "Initial release: focus on local forms. (See CHANGELOG.md)",
-  "url": "https://github.com/kLabz/haxe-react-redux-form",
+  "url": "https://github.com/axelhuizinga/haxe-react-redux-form",
   "license": "MIT",
   "tags": [
     "javascript",

@@ -4,7 +4,7 @@ import haxe.Constraints.Function;
 import haxe.extern.EitherType;
 import js.html.Event;
 import js.html.HtmlElement;
-import react.React.CreateElementType;
+import react.ReactType;
 import react.ReactComponent;
 
 @:enum abstract FormValidationEvent(String) to String {
@@ -19,7 +19,7 @@ typedef FormProps = {
 	@:optional var validateOn:FormValidationEvent;
 	@:optional var onSubmit:Dynamic->Event->Void;
 	@:optional var onSubmitFailed:Dynamic; // formState for the form's model
-	@:optional var component:CreateElementType;
+	@:optional var component:ReactType;
 	@:optional var onUpdate:Dynamic->Void; // formState for the form's model
 	@:optional var onChange:Dynamic->Void; // value of the form's model
 	@:optional var getRef:HtmlElement->Void;
